@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Data Mahasiswa</title>
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        form{
+          width: 31%;
+          margin-left: 34.5%;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <legend><h2>Formulir Data Mahasiswa</h2></legend>
+            <table>
+                <tr>
+                    <td><label for="nama">Nama Lengkap</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">NIM</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="nim"></td>
+                </tr>
+                <tr>
+                    <td><label for="semester">Semester</label></td>
+                    <td>:</td>
+                    <td>
+                        <select name="semester" id="semester">
+                            <option value="">Pilih Semester</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+                    <td>:</td>
+                    <td><input type="date" name="tgl_lahir"></td>
+                </tr>
+                <tr>
+                    <td><label for="jk">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="jk1" name="jk" value="Laki-Laki">
+                        <label for="jk1">Laki-Laki</label>
+                        <input type="radio" id="jk2" name="jk" value="Perempuan">
+                        <label for="jk2">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="no_hp">Nomor HP/WA</label></td>
+                    <td>:</td>
+                    <td><input type="tel" name="no_hp"></td>
+                </tr>
+                <tr>
+                    <td><label for="foto">Upload Foto</label></td>
+                    <td>:</td>
+                    <td><input type="file" name="foto"></td>
+                </tr>
+                <tr>
+                    <td><label for="deskripsi">Deskripsi diri</label></td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="deskripsi"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
